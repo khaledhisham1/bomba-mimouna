@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بومبا وميمونة | ملابس أطفال - الزقازيق</title>
+<meta name="description" content="بومبا وميمونة - ملابس أطفال ولادي وبناتي وبيبي في الزقازيق (ديمو)">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#a9d8f5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="intro-on">
+
+<!-- INTRO: The Magic Wardrobe -->
+<section class="intro" id="intro" aria-label="مقدمة">
+  <button class="skip" id="skipIntro">تخطي</button>
+  <div class="intro-stage">
+    <p class="intro-hi">أهلاً بيكم في</p>
+    <div class="wardrobe" id="wardrobe">
+      <div class="crown"><span>Bomba</span><i>&amp;</i><span>Mimouna</span></div>
+      <div class="cabinet">
+        <div class="inside">
+          <div class="rod"></div>
+          <div class="hangers">
+            <div class="hg" style="--c:#ff7f6b;--d:0s"><b></b><span class="tee"></span></div>
+            <div class="hg" style="--c:#ffe29a;--d:.2s"><b></b><span class="dress"></span></div>
+            <div class="hg" style="--c:#bfe8d6;--d:.4s"><b></b><span class="tee"></span></div>
+            <div class="hg" style="--c:#a9d8f5;--d:.1s"><b></b><span class="dress"></span></div>
+            <div class="hg" style="--c:#f6b6c1;--d:.3s"><b></b><span class="tee"></span></div>
+          </div>
+          <div class="shelf"><i></i><i></i><i></i></div>
+        </div>
+        <div class="door door-r"><span class="knob"></span><span class="star">&#9733;</span></div>
+        <div class="door door-l"><span class="knob"></span><span class="moon">&#9790;</span></div>
+      </div>
+      <div class="feet"><i></i><i></i></div>
+    </div>
+    <h1 class="intro-title">بومبا وميمونة</h1>
+    <button class="open-btn" id="openWardrobe">افتح الدولاب</button>
+  </div>
+</section>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="logo" aria-label="بومبا وميمونة"><span class="dots"><i></i><i></i></span><b>بومبا وميمونة</b><small>Kids Wear</small></a>
+    <nav class="nav" id="nav">
+      <a href="#shop" data-cat="boys">ولادي</a>
+      <a href="#shop" data-cat="girls">بناتي</a>
+      <a href="#shop" data-cat="baby">بيبي</a>
+      <a href="#school">المدارس</a>
+      <a href="#offers">عروض الأسبوع</a>
+      <a href="#branch">الفرع</a>
+    </nav>
+    <div class="hdr-tools">
+      <button class="icon-btn" id="openSearch" aria-label="بحث"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+      <button class="cart-btn" id="openCart">السلة <span id="cartCount">0</span></button>
+      <button class="icon-btn burger" id="burger" aria-label="القائمة"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <span class="tag-pill">كولكشن الموسم وصل</span>
+      <h2>دولاب ولادك<br><em>اتملى</em> حاجات حلوة</h2>
+      <p>ملابس ولادي وبناتي وبيبي بخامات مريحة، بمقاسات من يوم الولادة لحد 12 سنة. اختاري السن، والموقع يوريكي اللي يناسب بس.</p>
+      <div class="hero-cta">
+        <a href="#shop" class="btn btn-coral">تسوقي دلوقتي</a>
+        <button class="btn btn-ghost" data-open="sizeGuide">جدول المقاسات</button>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="arch"><img src="assets/img/hero_racks.jpg" alt="ملابس أطفال على الشماعات"></div>
+      <div class="hero-mini"><img src="assets/img/bb_romper.jpg" alt=""></div>
+      <div class="price-tag"><b>-20%</b><span>عرض الأسبوع</span></div>
+      <svg class="doodle d1" viewBox="0 0 60 60"><path d="M30 5l7 16 17 2-13 11 4 17-15-9-15 9 4-17L6 23l17-2z"/></svg>
+      <svg class="doodle d2" viewBox="0 0 80 30"><path d="M2 20c10-16 20-16 30 0s20 16 30 0 12-10 16-6"/></svg>
+    </div>
+  </section>
+
+  <!-- AGE PICKER -->
+  <section class="age-wrap">
+    <div class="wrap age">
+      <h3>ابنك / بنتك عندهم كام سنة؟</h3>
+      <div class="age-chips" id="ageChips"></div>
+    </div>
+  </section>
+
+  <!-- COLLECTIONS -->
+  <section class="wrap cols">
+    <button class="col-tile c-boys" data-goto="boys"><img src="assets/img/b_polo.jpg" alt=""><span>ولادي</span></button>
+    <button class="col-tile c-girls" data-goto="girls"><img src="assets/img/g_red.jpg" alt=""><span>بناتي</span></button>
+    <button class="col-tile c-baby" data-goto="baby"><img src="assets/img/bb_knit.jpg" alt=""><span>بيبي</span></button>
+    <a class="col-tile c-school" href="#school"><img src="assets/img/school1.jpg" alt=""><span>المدارس</span></a>
+  </section>
+
+  <!-- OFFERS -->
+  <section class="offers" id="offers">
+    <div class="wrap offers-in">
+      <div>
+        <span class="eyebrow">عرض الأسبوع</span>
+        <h3>خصم <b>20%</b> على القطع المختارة</h3>
+        <p>العرض بيتجدد كل أسبوع. القطع اللي عليها العلامة دي بس.</p>
+      </div>
+      <div class="countdown" id="countdown" aria-label="الوقت المتبقي"></div>
+      <button class="btn btn-cream" id="showOffers">شوفي قطع العرض</button>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section class="wrap shop" id="shop">
+    <div class="shop-head">
+      <h3>الكتالوج</h3>
+      <div class="tabs" id="catTabs">
+        <button data-c="all" class="on">الكل</button>
+        <button data-c="boys">ولادي</button>
+        <button data-c="girls">بناتي</button>
+        <button data-c="baby">بيبي</button>
+        <button data-c="offer">العروض</button>
+      </div>
+      <div class="shop-tools">
+        <label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="searchInput" placeholder="دوري على فستان، طقم، بادي..."></label>
+        <select id="sortSel" aria-label="ترتيب"><option value="def">الترتيب: المميز</option><option value="low">السعر: الأقل</option><option value="high">السعر: الأعلى</option></select>
+      </div>
+    </div>
+    <p class="result-line" id="resultLine"></p>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- SCHOOL -->
+  <section class="school wrap" id="school">
+    <div class="school-img"><img src="assets/img/school2.jpg" alt="أطفال في الفصل"></div>
+    <div class="school-copy">
+      <span class="eyebrow">Back to School</span>
+      <h3>جهزي لبس المدرسة<br>من مكان واحد</h3>
+      <p>قمصان وسويت شيرتات وتيشيرتات قطن تستحمل اليوم الدراسي كله، ومريحة في الحركة.</p>
+      <ul class="school-list" id="schoolList"></ul>
+      <button class="btn btn-coral" id="showSchool">كولكشن المدارس</button>
+    </div>
+  </section>
+
+  <!-- BRANCH -->
+  <section class="branch wrap" id="branch">
+    <div class="branch-card">
+      <span class="eyebrow">زورونا</span>
+      <h3>فرعنا في الزقازيق</h3>
+      <ul class="branch-info">
+        <li><b>العنوان</b><span>الزقازيق، الشرقية (العنوان بالتفصيل يتأكد مع المحل)</span></li>
+        <li><b>واتساب</b><span dir="ltr">01140177229</span></li>
+        <li><b>المواعيد</b><span>تتأكد مع المحل</span></li>
+      </ul>
+      <div class="branch-btns">
+        <a class="btn btn-coral" href="https://maps.google.com/?q=Zagazig" target="_blank" rel="noopener">افتح الخريطة</a>
+        <a class="btn btn-ghost" href="https://www.facebook.com/bombakids.egypt/" target="_blank" rel="noopener">صفحة الفيسبوك</a>
+      </div>
+    </div>
+    <div class="map">
+      <iframe title="خريطة الزقازيق" loading="lazy" src="https://maps.google.com/maps?q=Zagazig&z=13&output=embed"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <a href="#top" class="logo"><span class="dots"><i></i><i></i></span><b>بومبا وميمونة</b></a>
+    <p>ديمو تجريبي. الصور من Unsplash للتوضيح، والأسعار تجريبية.</p>
+  </div>
+</footer>
+
+<!-- OVERLAYS -->
+<div class="veil" id="veil"></div>
+
+<div class="modal" id="productModal" role="dialog" aria-modal="true" aria-label="تفاصيل المنتج"></div>
+
+<div class="modal small" id="sizeGuide" role="dialog" aria-modal="true" aria-label="جدول المقاسات">
+  <button class="x" data-close>×</button>
+  <h3>جدول المقاسات</h3>
+  <p class="muted">لو ابنك بين مقاسين، اختاري الأكبر.</p>
+  <div class="table-wrap"><table id="sizeTable"><thead><tr><th>السن</th><th>الطول (سم)</th><th>الوزن (كجم)</th><th>المقاس</th></tr></thead><tbody></tbody></table></div>
+</div>
+
+<div class="modal small" id="searchModal" role="dialog" aria-modal="true" aria-label="بحث">
+  <button class="x" data-close>×</button>
+  <h3>بتدوري على إيه؟</h3>
+  <input id="quickSearch" placeholder="اكتبي اسم القطعة...">
+  <div id="quickResults" class="quick-results"></div>
+</div>
+
+<aside class="drawer" id="drawer" aria-label="السلة"></aside>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
